@@ -1,4 +1,5 @@
 #include "Base.hpp"
+#include <ctime> 
 
 Base *generate(void)
 {
@@ -70,6 +71,7 @@ void identify(Base &p)
 
 int main()
 {
+	srand(time(NULL));
 	Base *randbase1 = generate();
 	Base *randbase2 = generate();
 	Base *randbase3 = generate();
